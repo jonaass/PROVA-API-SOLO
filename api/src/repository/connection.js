@@ -9,4 +9,4 @@ const con = await mysql.connection({
 })
 
 
-export{con}
+export{ con }
