@@ -22,6 +22,6 @@ export async function ListarAnimes() {
     `
 
     const [linhas] = await con.query(comando);
-    return linhas
+    return linhas;
     
 }
