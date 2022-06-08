@@ -3,8 +3,8 @@ import { con } from './connection.js'
 export async function InserirAnime(Anime) {
     const comando =
     `
-    INSERT INTO tb_anime (id_anime, nm_anime)
-                 VALUES  (?, ?)
+    INSERT INTO tb_anime (nm_anime)
+                 VALUES  (?)
     `
 
     const [resposta] = await con.query(comando, [Anime.nome]);
